@@ -1,0 +1,179 @@
+MODE = None 
+MEDIA_URL = '/media/' 
+DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3', 'USER': '', 'PASSWORD': '', 'HOST': '', 'PORT': '', 'NAME': 'db.sqlite3', 'CONN_MAX_AGE': 600, 'CONN_HEALTH_CHECKS': True, 'DISABLE_SERVER_SIDE_CURSORS': False}}
+[
+{
+  "model": "core.autor",
+  "pk": 1,
+  "fields": {
+    "nome": "Machado de Assis",
+    "email": "machadodeassis@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 2,
+  "fields": {
+    "nome": "William Shakespeare",
+    "email": "shakespearewilliam@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 3,
+  "fields": {
+    "nome": "Clarice Lispector",
+    "email": "lispclarice@gmail.com"
+  }
+},
+{
+  "model": "core.autor",
+  "pk": 4,
+  "fields": {
+    "nome": "Stephen King",
+    "email": "sthepen01@gmail.com"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 1,
+  "fields": {
+    "descricao": "Drama"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 2,
+  "fields": {
+    "descricao": "Ficção"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 3,
+  "fields": {
+    "descricao": "Romance"
+  }
+},
+{
+  "model": "core.categoria",
+  "pk": 4,
+  "fields": {
+    "descricao": "Terror"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 1,
+  "fields": {
+    "nome": "Companhia das Letras",
+    "site": "https://www.companhiadasletras.com.br/"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 2,
+  "fields": {
+    "nome": "Record",
+    "site": "https://record.com.br/"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 3,
+  "fields": {
+    "nome": "Sextance",
+    "site": "https://sextante.com.br/"
+  }
+},
+{
+  "model": "core.editora",
+  "pk": 4,
+  "fields": {
+    "nome": "Rocco",
+    "site": "https://rocco.com.br/"
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 1,
+  "fields": {
+    "titulo": "Dom Casmurro",
+    "isbn": "9788542221091",
+    "quantidade": 20,
+    "preco": "49.78",
+    "categoria": null,
+    "editora": null,
+    "capa": 1
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 2,
+  "fields": {
+    "titulo": "Memórias Póstumas de Brás Cubas",
+    "isbn": "9786555397901",
+    "quantidade": 15,
+    "preco": "35.50",
+    "categoria": null,
+    "editora": null,
+    "capa": null
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 3,
+  "fields": {
+    "titulo": "A Paixão Segundo G.H..",
+    "isbn": "9786555320060",
+    "quantidade": 8,
+    "preco": "39.99",
+    "categoria": 3,
+    "editora": 2,
+    "capa": null
+  }
+},
+{
+  "model": "core.livro",
+  "pk": 4,
+  "fields": {
+    "titulo": "Hamlet, Romeu e Julieta",
+    "isbn": "8520926002",
+    "quantidade": 5,
+    "preco": "60.00",
+    "categoria": null,
+    "editora": null,
+    "capa": null
+  }
+},
+{
+  "model": "core.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$7WWh9s6jMzry2Gbnx30H8d$wIZzPnIKrhbOpBi0Ny25dtOcRoOK+ileRqPtzv+CUQk=",
+    "last_login": "2026-04-07T18:01:43.226Z",
+    "is_superuser": true,
+    "email": "a@a.com",
+    "name": "Superusuário",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$gDw2xQZgwFkYpidganQBRU$8lNQVIM3rCWmyLCdPM0a3pcSHLmLYRZfhg1/snempV0=",
+    "last_login": null,
+    "is_superuser": true,
+    "email": "marcoandre@gmail.com",
+    "name": "Marco André Lopes Mendes",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
